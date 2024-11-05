@@ -44,7 +44,7 @@ a {
     align-items: center;
     justify-content: space-between;
     position: fixed;
-    width: 100vw;
+    width: 100dvw;
     padding-left: 25px;
     padding-right: 50px;
     z-index: 100;
@@ -106,8 +106,8 @@ main {
 }
 
 .hero-section {
-    min-height: calc(100vh - var(--header-height));
-    max-height: calc(100vh - var(--header-height));
+    min-height: calc(100dvh - var(--header-height));
+    max-height: calc(100dvh - var(--header-height));
     /* background-image: url(assets/repeating-triangles.svg);
     background-size: 2000px; */
     display: grid;
