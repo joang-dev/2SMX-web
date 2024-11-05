@@ -45,6 +45,7 @@ a {
     width: 100vw;
     padding-left: 25px;
     padding-right: 50px;
+    z-index: 100;
 }
 
 .logo {
@@ -125,9 +126,8 @@ main {
     grid-area: title;
 }
 
-.hero-left {
-    width: 100%;
-    padding: 20px;
+.hero-content {
+    width: 80%;
     grid-area: hero-left;
     display: flex;
     flex-direction: column;
@@ -135,8 +135,13 @@ main {
     gap: 100px;
 }
 
-.hero-right {
-    width: 80%;
+.hero-image {
+    height: 80%;
+    width: 100%;
+    background-image: url(assets/vertical-chat.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     grid-area: hero-right;
 }
 
@@ -184,9 +189,4 @@ main {
 .hero-button:hover {
     cursor: pointer;
     color: var(--accent-color);
-}
-
-.hero-right > img {
-    width: 100%;
-    border-radius: 25px;
 }
