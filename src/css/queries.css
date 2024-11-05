@@ -1,3 +1,5 @@
+@import url(/css/boxFX.css);
+
 :root {
     --accent-color: #5ab732;
     --primary-bg: #0a0a0a;
@@ -33,9 +35,6 @@
         height: 100%;
         background-image: url(/assets/clear-def-team-collaboration.svg);
     }
-    .hero-content {
-        gap: 50px;
-    }
     .hero-section {
         grid-template-columns: 100%;
         grid-template-rows: minmax(auto, 1fr) 2fr 2.5fr;
@@ -47,6 +46,27 @@
     }
     .hero-title {
         font-size: 50px;
+    }
+    .boxFX_wrapper::after {
+        display: none;
+    }
+    .boxFX_wrapper::before {
+        padding: 0;
+        border-radius: 10px;
+        background: #5ab732;
+        transform: none;
+        top: 0;
+        left: 0;
+        width: 5px;
+        height: 100%;
+    }
+    .boxFX {
+        background: none;
+        color: white;
+    }
+    .hero-description {
+        font-size: 18px;
+        gap: 20px;
     }
 }
 
@@ -60,9 +80,6 @@
     .page-nav > ul {
         gap: 35px;
     }
-}
-
-@media screen and (max-width: 950px) {
     .hero-header {
         padding: 0;
         justify-content: center;
@@ -70,4 +87,36 @@
     .page-nav {
         display: none;
     }
+    .hero-content {
+        gap: 0;
+        justify-content: space-evenly;
+    }
 }
+
+ @media screen and (max-width: 550px) {
+    .hero-title {
+        font-size: 30px;
+    }
+
+    .hero-image {
+        background-image: url(/assets/vertical-chat.svg);
+    }
+    .hero-description {
+        font-size: 14px;
+    }
+ }
+/*
+    .hero-section {
+        grid-template-rows: minmax(auto, 1fr) 3fr;
+        grid-template-areas: 
+        "title"
+        "hero-left"
+        ;
+    }
+
+    // vamos a quitar la imagen 
+    .hero-image {
+        display: none;
+    }
+
+} */
