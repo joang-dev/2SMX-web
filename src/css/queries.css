@@ -31,7 +31,7 @@
     .hero-image {
         width: 70%;
         height: 100%;
-        background-image: url(/assets/def-team-collaboration.svg);
+        background-image: url(/src/assets/def-team-collaboration.svg);
     }
     .hero-content {
         gap: 50px;

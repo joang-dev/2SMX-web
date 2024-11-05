@@ -167,6 +167,12 @@ main {
     position: relative;
     overflow: hidden;
     z-index: 1;
+    box-shadow: 5px 10px 10px #174e50;
+}
+
+.hero-button:active {
+    transform: translateY(4px); /* Mueve el botón hacia abajo cuando se hace clic */
+    box-shadow: none; /* Aumenta la sombra para simular el aterrizaje */
 }
 
 .hero-button::before {
