@@ -101,7 +101,7 @@ main {
     position: relative;
     top: 100px;
     height: calc(100vh - 100px);
-    background-image: url(/public/pattern-randomized.svg);
+    background-image: url(assets/pattern-randomized.svg);
 }
 
 .hero-title {
