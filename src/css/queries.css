@@ -1,0 +1,24 @@
+:root {
+    --accent-color: #5ab732;
+    --primary-bg: #0a0a0a;
+    --secondary-bg: #121212;
+    --terciary-bg: #1e1e1e;
+    --light-bg: #ddeedd;
+    --grey: #bbbbbb;
+    --accent-text: #88cc88;
+    --border-color: #333333;
+    --alert-color: #ff6666;
+    --white-text: #e5e5e5;
+    /* --white-text: whitesmoke; */
+    --green-gradient: linear-gradient(to right bottom, #c5d773, #a1bf5f, #7ea64c, #5b8f3a, #38772a);
+    --header-height: 100px;
+}
+
+@media screen and (max-width: 1800px) {
+    .hero-section {
+        grid-template-columns: 1fr 1.5fr;
+    }
+    .hero-left {
+        width: 60%;
+    }
+}
