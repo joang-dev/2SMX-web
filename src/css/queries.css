@@ -1,5 +1,5 @@
 @import url(/css/boxFX.css);
-
+@import url(/style.css);
 :root {
     --accent-color: #5ab732;
     --primary-bg: #0a0a0a;
@@ -16,28 +16,25 @@
     --header-height: 100px;
 }
 
-@media screen and (max-width: 1500px) {
-    .hero-image {
-        height: 60%;
-    }
-    .hero-description {
-        line-height: initial;
-        gap: 10px;
-    }
-}
 /* layout change */
 @media screen and (max-width: 1150px) {
     .page-nav > ul {
         gap: 60px;
     }
+
+    .hero-content {
+        gap: 0;
+        justify-content: space-evenly;
+    }
+
     .hero-image {
         width: 70%;
         height: 100%;
-        background-image: url(/assets/clear-def-team-collaboration.svg);
+        background-image: url(../assets/clear-def-team-collaboration.svg);
     }
     .hero-section {
         grid-template-columns: 100%;
-        grid-template-rows: minmax(auto, 1fr) 2fr 2.5fr;
+        grid-template-rows: minmax(auto, 1fr) 2fr 3fr;
         grid-template-areas: 
         "title"
         "hero-right"
@@ -66,44 +63,50 @@
     }
     .hero-description {
         font-size: 18px;
-        gap: 20px;
+        gap: 50px;
     }
 }
 
 @media screen and (max-width: 950px) {
     .logo {
+        width: 100%;
         gap: 10px;
+        justify-content: center;
     }
     .logo > h1 {
         font-size: 25px;
     }
-    .page-nav > ul {
+    /* .page-nav > ul {
         gap: 35px;
-    }
+    } */
     .hero-header {
+        height: auto;
         padding: 0;
-        justify-content: center;
+        /* justify-content: center; */
     }
     .page-nav {
         display: none;
     }
-    .hero-content {
-        gap: 0;
-        justify-content: space-evenly;
-    }
 }
 
- @media screen and (max-width: 550px) {
+/* mobile layout */
+
+ @media screen and (max-width: 650px) {
+
     .hero-title {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .hero-image {
-        background-image: url(/assets/vertical-chat.svg);
+        background-image: url(../assets/vertical-chat.svg);
     }
+
     .hero-description {
-        font-size: 12px;
+        gap: 20px;
     }
+    /* .hero-description {
+        font-size: 12px;
+    } */
  }
 /*
     .hero-section {

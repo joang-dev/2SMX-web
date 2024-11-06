@@ -22,9 +22,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: conic-gradient(from var(--angle), #5ab732, #32b3b7, #5ab732);
+    background: conic-gradient(from var(--angle), transparent, #32b3b7, #5ab732);
     animation: rotateGradient 5s linear infinite;
-    padding: 10px;
+    padding: 4px;
     z-index: -1;
 }
 
