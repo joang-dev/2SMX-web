@@ -23,8 +23,9 @@
     }
 
     .hero-content {
+        padding: 30px 0;
         gap: 0;
-        justify-content: space-evenly;
+        justify-content: space-around;
     }
 
     .hero-image {
@@ -34,7 +35,7 @@
     }
     .hero-section {
         grid-template-columns: 100%;
-        grid-template-rows: minmax(auto, 1fr) 2fr 3fr;
+        grid-template-rows: minmax(auto, 1fr) 1.5fr 3fr;
         grid-template-areas: 
         "title"
         "hero-right"
@@ -62,8 +63,7 @@
         color: white;
     }
     .hero-description {
-        font-size: 18px;
-        gap: 50px;
+        gap: 30px;
     }
 }
 
@@ -72,6 +72,12 @@
         flex-grow: 0;
         font-size: 25px;
     }
+
+    .hero-title {
+        font-size: 40px;
+    }
+
+
     /* .page-nav > ul {
         gap: 35px;
     } */
@@ -85,9 +91,12 @@
         display: none;
     }
 
-    .hero-description {
+    .hero-description, .hero-button {
         font-size: 12px;
-        gap: 20px;
+    }
+
+    .hero-description {
+        gap: 15px;
     }
 }
 
@@ -103,10 +112,16 @@
         justify-content: start;
     }
     .hero-title {
-        font-size: 40px;
+        font-size: 32px;
     }
+    .hero-button {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+ }
 
-    .hero-image {
-        background-image: url(../assets/vertical-chat.svg);
+ @media screen and (max-width: 450px) {
+    .hero-title {
+        font-size: 26px;
     }
  }
