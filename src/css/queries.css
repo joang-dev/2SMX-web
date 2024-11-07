@@ -157,4 +157,8 @@
     .hero-description {
         line-height: initial;
     }
+
+    .subject-title {
+        font-size: 22px;
+    }
  }
