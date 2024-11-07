@@ -11,7 +11,6 @@
     --border-color: #333333;
     --alert-color: #ff6666;
     --white-text: #e5e5e5;
-    /* --white-text: whitesmoke; */
     --green-gradient: linear-gradient(to right bottom, #c5d773, #a1bf5f, #7ea64c, #5b8f3a, #38772a);
     --header-height: 100px;
 }
@@ -23,7 +22,7 @@
     }
 
     .hero-content {
-        padding: 30px 0;
+        /* padding: 30px 0; */
         gap: 0;
         justify-content: space-around;
     }
@@ -35,7 +34,8 @@
     }
     .hero-section {
         grid-template-columns: 100%;
-        grid-template-rows: minmax(auto, 1fr) 1.5fr 3fr;
+        grid-template-rows: minmax(auto, 1fr) 1.5fr 2.5fr;
+        row-gap: 40px;
         grid-template-areas: 
         "title"
         "hero-right"
@@ -68,9 +68,13 @@
 }
 
 @media screen and (max-width: 950px) {
+    :root {
+        --header-height: 80px;
+    }
+
     h1 {
         flex-grow: 0;
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .hero-title {
@@ -100,28 +104,57 @@
     }
 }
 
-/* mobile layout */
-
  @media screen and (max-width: 650px) {
     h1 {
-        margin-left: -100px;
+        margin-left: -100px; /* image width */
         text-align: center;
         flex-grow: 1;
+        font-size: 18px;
     }
     .hero-header {
         justify-content: start;
     }
+
+    .hero-section {
+        row-gap: 20px;
+    }
+
     .hero-title {
         font-size: 32px;
     }
     .hero-button {
-        padding-top: 5px;
-        padding-bottom: 5px;
+        padding: 8px 24px;
     }
  }
+  
+/* mobile layout */
+ 
+@media screen and (max-width: 450px) {
 
- @media screen and (max-width: 450px) {
+    .hero-bars {
+        display: initial;
+    }
+
+    .hero-header {
+        display: grid;
+        place-items: center;
+        grid-template-columns: 100px 1fr 100px;
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .hero-image {
+        background-image: url(../assets/vertical-chat.svg);
+    }
+
     .hero-title {
         font-size: 26px;
+    }
+    .hero-description {
+        line-height: initial;
     }
  }
